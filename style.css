@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(41, 17, 65);
+}
+
+.text-left{
+    padding: auto 30px;
+    background-color: #dbc9e9;
+    min-height: 67vh;
+    flex-basis: 38%;
+}
+
+.gallery{
+    min-height: 67vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+    gap: 8px;
+    flex-basis: 50%;
+}
+
+.text-left h1{
+    color: #000;
+    margin-top: 6rem;
+}
+
+.text-left p{
+    color: #000;
+    padding: auto 5px;
+}
+
+.text-left span{
+    font-size: 4rem;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+.col-3{
+    grid-column: span 3;
+}
+.col-2{
+    grid-column: span 2;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    transition: all 1s ease;
+}
+
+.photo:hover{
+    background-color: transparent;
+    background-position: center;
+}
+
+.first:hover, .seventh:hover{
+    background-position: top;
+}
+
+.photo h3{
+    color: #ffffff;
+    text-shadow: 3px 3px 1px #000;
+    /* border-bottom: 0.125rem solid #dadada; */
+}
+
+.my-heading{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.last-two {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+
+.para{
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+}
