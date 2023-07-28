@@ -102,3 +102,23 @@
     text-align: center;
     margin-top: 10px;
 }
+
+@media (max-width: 601px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-left{
+        width: 100%;
+        min-height: auto;
+    }
+    .gallery{
+        width: 80%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo{
+        flex-basis: 200px
+    }
+}
